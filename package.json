@@ -1,0 +1,19 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "clean": "rm -rf build dist typechain cache artifacts",
+    "compile": "hardhat compile",
+    "build": "npm install && ./node_modules/.bin/tsc",
+    "test": "npm run compile && npx hardhat test"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "hardhat": "^2.14.1"
+  },
+  "dependencies": {
+    "@noble/secp256k1": "^1.5.5",
+    "@openzeppelin/contracts": "^4.9.0",
+    "bignumber.js": "^9.1.1",
+    "circomlibjs": "^0.1.7"
+  }
+}
